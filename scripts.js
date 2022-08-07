@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             fullscreenControlOptions: {
                 position: 'topleft'
             }
-        }).setView([21.2158,107.3309], 9);
+        }).setView([21.2158,107.3309], 11);
 
         const baseMaps = {
             "Đường phố": osm,
@@ -270,15 +270,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
             },
         ];
 
-
-        const icon = L.divIcon({
-            // iconSize: [20, 20],
-            // iconAnchor: [18, 18],
-            // popupAnchor: [0, -10],
-            // shadowSize: [0, 0],
-            // shadowAnchor: [10, 10],
-        });
-
         districtCoords.forEach(district => {
             let marker = L.marker([district.left, district.right], {
             }).addTo(map);
@@ -314,7 +305,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         L.control.layers(baseMaps,overlayMaps).addTo(map);
 
         map.fitBounds(myFeatureGroup.getBounds());
-        map.options.minZoom = 9;
+        map.options.minZoom = 10;
         map.setMaxBounds(map.getBounds().pad(Math.sqrt(2) / 2));
     }
 });
