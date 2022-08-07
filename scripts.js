@@ -59,20 +59,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
         //Thêm tìm kiếm
-        const searchControl = L.esri.Geocoding.geosearch().addTo(map);
-        var results = L.layerGroup().addTo(map);
-        searchControl.on('results', function (data) {
-            results.clearLayers();
-            for (var i = data.results.length - 1; i >= 0; i--) {
-                results.addLayer(L.marker(data.results[i].latlng));
-            }
-        });
+        // const searchControl = L.esri.Geocoding.geosearch().addTo(map);
+        // var results = L.layerGroup().addTo(map);
+        // searchControl.on('results', function (data) {
+         //   results.clearLayers();
+          //  for (var i = data.results.length - 1; i >= 0; i--) {
+           //     results.addLayer(L.marker(data.results[i].latlng));
+           // }
+       // });
 
-        function onEachFeature(feature, layer) {
-            if (feature.properties && feature.properties.popupContent) {
+        // function onEachFeature(feature, layer) {
+        //    if (feature.properties && feature.properties.popupContent) {
                 layer.bindPopup(feature.properties.popupContent);
-            }
-        }
+           // }
+      //  }
 
         const districtCoords =[
             {
