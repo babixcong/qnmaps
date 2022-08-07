@@ -306,6 +306,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         map.fitBounds(myFeatureGroup.getBounds());
         map.options.minZoom = 10;
-        map.setMaxBounds(map.getBounds().pad(Math.sqrt(2) / 2));
+        // map.setMaxBounds(map.getBounds().pad(Math.sqrt(2) / 2));
     }
 });
