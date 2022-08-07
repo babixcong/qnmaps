@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         //Khai báo bản đồ
         var map = L.map('qn_map', {
-            dragging: false,
+            // dragging: false,
             //tap: !L.Browser.mobile,
             layers: [osm, custom_layer],
             fullscreenControl: true,
