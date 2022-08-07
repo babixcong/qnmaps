@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             fullscreenControlOptions: {
                 position: 'topleft'
             }
-        }).setView([21.2158,107.3309], 11);
+        }).setView([21.2158,107.3309], 9);
 
         const baseMaps = {
             "Đường phố": osm,
