@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         const baseMaps = {
             "Đường phố": osm,
-            "Vệ tinh": satellite,
+            //"Vệ tinh": satellite,
             // "Sắc nét": Stadia_Outdoors,
             //"Trắng Đen": Stamen_Toner
         };
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 right: 107.30800561248184,
                 href:'', },
             {
-                name: "Cầu Poóc Tính 1 - Trận địa pháo Cao xạ - hầm chỉ huy của xí nghiệp than Cửa Ông",
+                name: "Cầu Poóc Tính 1 - Trận địa pháo Cao xạ - Hầm chỉ huy của xí nghiệp than Cửa Ông",
                 left: 21.026260395382067,
                 right: 107.37187615201181,
                 href:'',},
