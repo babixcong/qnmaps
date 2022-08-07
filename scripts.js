@@ -277,7 +277,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 <div>${district.name}</div>
             `);
             marker.on('click', function () {
-                window.open('https://www.google.com', '_blank');
+                window.open(district.href, '_blank');
             })
         });
 
