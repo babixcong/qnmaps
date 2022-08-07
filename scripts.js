@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         //Khai báo bản đồ
         var map = L.map('qn_map', {
-            dragging: !L.Browser.mobile,
+            dragging: false,
             //tap: !L.Browser.mobile,
             layers: [osm, custom_layer],
             fullscreenControl: true,
@@ -314,7 +314,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         L.control.layers(baseMaps,overlayMaps).addTo(map);
 
         map.fitBounds(myFeatureGroup.getBounds());
-        map.options.minZoom = 10    ;
+        map.options.minZoom = 9;
         map.setMaxBounds(map.getBounds().pad(Math.sqrt(2) / 2));
     }
 });
