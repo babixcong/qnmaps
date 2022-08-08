@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 name: "Tượng đài Vũ Văn Hiếu",
                 left: 20.952562624700516,
                 right: 107.09026600176891,
-                href:'',
+                href:'https://tinhdoanquangninh.vn/dia-chi-do-tuong-dai-vu-van-hieu-ha-long/',
             },
             {
                 name: "Di tích lưu niệm Bác Hồ",
