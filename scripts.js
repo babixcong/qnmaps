@@ -59,14 +59,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
         //Thêm tìm kiếm
-        const searchControl = L.esri.Geocoding.geosearch().addTo(map);
-        var results = L.layerGroup().addTo(map);
-        searchControl.on('results', function (data) {
-            results.clearLayers();
-            for (var i = data.results.length - 1; i >= 0; i--) {
-                results.addLayer(L.marker(data.results[i].latlng));
-            }
-        });
+        // const searchControl = L.esri.Geocoding.geosearch().addTo(map);
+        // var results = L.layerGroup().addTo(map);
+        // searchControl.on('results', function (data) {
+        //     results.clearLayers();
+        //     for (var i = data.results.length - 1; i >= 0; i--) {
+        //         results.addLayer(L.marker(data.results[i].latlng));
+        //     }
+        // });
 
         function onEachFeature(feature, layer) {
             if (feature.properties && feature.properties.popupContent) {
@@ -273,9 +273,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
         districtCoords.forEach(district => {
             let marker = L.marker([district.left, district.right], {
             }).addTo(map);
-            marker.bindTooltip(`
-                <div>${district.name}</div>
-            `);
+            // marker.bindTooltip(`
+            //     <div>
+            //         <img src="rotate.png" width="50%" />${district.name}</img>
+            //     </div>
+            // `);
+            marker.bindTooltip(
+                `<div style="background:white; padding:1px 3px 1px 3px; display: flex; align-items: center">
+<!--                    <div style="width: 50px"><img src="rotate.png" alt="" width="100%" /></div>-->
+                    <div style="margin-left: 5px">${district.name}</div>
+                </div>`,
+                {
+                    direction: 'top',
+                    permanent: false,
+                    sticky: true,
+                    offset: [10, 0],
+                    opacity: 1,
+                    className: 'leaflet-tooltip-own'
+                });
             marker.on('click', function () {
                 window.open(district.href, '_blank');
             })
