@@ -47,9 +47,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         const baseMaps = {
             "Đường phố": osm,
-            "Vệ tinh": satellite,
+            //"Vệ tinh": satellite,
             // "Sắc nét": Stadia_Outdoors,
-            "Trắng Đen": Stamen_Toner
+            //"Trắng Đen": Stamen_Toner
         };
 
         //Thêm option vào overlayMaps
@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
         //Thêm tìm kiếm
+<<<<<<< HEAD
         // const searchControl = L.esri.Geocoding.geosearch().addTo(map);
         // var results = L.layerGroup().addTo(map);
         // searchControl.on('results', function (data) {
@@ -67,12 +68,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
         //         results.addLayer(L.marker(data.results[i].latlng));
         //     }
         // });
+=======
+        const searchControl = L.esri.Geocoding.geosearch().addTo(map);
+        var results = L.layerGroup().addTo(map);
+            searchControl.on('results', function (data) {
+            results.clearLayers();
+            for (var i = data.results.length - 1; i >= 0; i--) {
+                results.addLayer(L.marker(data.results[i].latlng));
+            }
+       );
+>>>>>>> 0782eb3519580fb3b45f7319394372aa6e310d5a
 
-        function onEachFeature(feature, layer) {
-            if (feature.properties && feature.properties.popupContent) {
+         function onEachFeature(feature, layer) {
+           if (feature.properties && feature.properties.popupContent) {
                 layer.bindPopup(feature.properties.popupContent);
             }
-        }
+       }
 
         const districtCoords =[
             {
@@ -98,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 right: 107.30800561248184,
                 href:'', },
             {
-                name: "Cầu Poóc Tính 1 - Trận địa pháo Cao xạ - hầm chỉ huy của xí nghiệp than Cửa Ông",
+                name: "Cầu Poóc Tính 1 - Trận địa pháo Cao xạ - Hầm chỉ huy của xí nghiệp than Cửa Ông",
                 left: 21.026260395382067,
                 right: 107.37187615201181,
                 href:'',},
@@ -206,7 +217,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 name: "Tượng đài Vũ Văn Hiếu",
                 left: 20.952562624700516,
                 right: 107.09026600176891,
-                href:'',
+                href:'https://tinhdoanquangninh.vn/dia-chi-do-tuong-dai-vu-van-hieu-ha-long/',
             },
             {
                 name: "Di tích lưu niệm Bác Hồ",
@@ -321,6 +332,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         map.fitBounds(myFeatureGroup.getBounds());
         map.options.minZoom = 10;
-        // map.setMaxBounds(map.getBounds().pad(Math.sqrt(2) / 2));
+        map.setMaxBounds(map.getBounds().pad(Math.sqrt(2) / 2));
     }
 });
