@@ -319,8 +319,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         L.control.layers(baseMaps,overlayMaps).addTo(map);
 
-        map.fitBounds(myFeatureGroup.getBounds());
-        map.options.minZoom = 9,5;
-        map.setMaxBounds(map.getBounds().pad(Math.sqrt(2) / 2));
+       // map.fitBounds(myFeatureGroup.getBounds());
+       // map.options.minZoom =10;
+      //  map.setMaxBounds(map.getBounds().pad(Math.sqrt(2) / 2));
     }
 });
