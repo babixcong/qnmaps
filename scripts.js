@@ -69,13 +69,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // });
 
          function onEachFeature(feature, layer) {
-           if (feature.properties && feature.properties.popupContent && feature.properties.square) {
+           if (feature.properties && feature.properties.popupContent && feature.properties.red_nation) {
                 layer.bindPopup(`
                     <div>
                     <div style="font-size: 16px; text-transform: uppercase">${feature.properties.popupContent}</div>
-                    <div><b style="color: red">Địa chỉ đỏ cấp quốc gia:</b> <i>${feature.properties.square}</i></div>
-                    <div><b style="color: green">Địa chỉ đỏ cấp tỉnh:</b> <i>${feature.properties.square}</i></div>
-                    <div><b style="color: blue">Địa chỉ đỏ kiểm kê:</b> <i>${feature.properties.square}</i></div>
+                    <div><b style="color: red">Địa chỉ đỏ cấp quốc gia:</b> <i>${feature.properties.red_nation}</i></div>
+                    <div><b style="color: green">Địa chỉ đỏ cấp tỉnh:</b> <i>${feature.properties.red_local}</i></div>
+                    <div><b style="color: blue">Địa chỉ đỏ kiểm kê:</b> <i>${feature.properties.red_kiem_ke}</i></div>
                     </div>
                 `);
             }
