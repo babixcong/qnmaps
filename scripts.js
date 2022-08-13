@@ -73,8 +73,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 layer.bindPopup(`
                     <div>
                     <div style="font-size: 16px; text-transform: uppercase">${feature.properties.popupContent}</div>
-                    <div><b style="color: red">Địa chỉ đỏ cấp quốc gia:</b> <i>${feature.properties.red_nation}</i></div>
-                    <div><b style="color: green">Địa chỉ đỏ cấp tỉnh:</b> <i>${feature.properties.red_local}</i></div>
+                    <div><b style="color: yellow">Địa chỉ đỏ cấp quốc gia:</b> <i>${feature.properties.red_nation}</i></div>
+                    <div><b style="color: red">Địa chỉ đỏ cấp tỉnh:</b> <i>${feature.properties.red_local}</i></div>
                     <div><b style="color: blue">Địa chỉ đỏ kiểm kê:</b> <i>${feature.properties.red_kiem_ke}</i></div>
                     </div>
                 `);
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
        
         const districtCoords =[
             {
-                name: "Khu căn cứ cách mạng hải Chi - Đình làng Dạ",
+                name: "Khu căn cứ cách mạng Hải Chi - Đình làng Dạ",
                 left: 21.320593052763357,
                 right:107.13797183650449,
                 href:'',
@@ -428,7 +428,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         L.control.layers(baseMaps,overlayMaps).addTo(map);
 
         map.fitBounds(myFeatureGroup.getBounds());
-        map.options.minZoom = 9;
+        map.options.minZoom = 10;
         map.setMaxBounds(map.getBounds().pad(Math.sqrt(2) / 2));
     }
 });
