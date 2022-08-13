@@ -80,14 +80,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 `);
             }
        }
-        const redIcon = new L.icon({
-            iconUrl: './red.png',
-        });
-
         const yellowIcon = new L.icon({
             iconUrl: './yellow.png',
         });
-
+        const redIcon = new L.icon({
+            iconUrl: './red.png',
+        });
+        const blueIcon = new L.icon({
+            iconUrl: './blue.png',
+        });
+       
         const districtCoords =[
             {
                 name: "Khu căn cứ cách mạng hải Chi - Đình làng Dạ",
@@ -119,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 right: 107.30800561248184,
                 href:'',
                 type: 'local',
-                icon: redIcon,
+                icon: yellowIcon,
             },
             {
                 name: "Cầu Poóc Tính 1 - Trận địa pháo Cao xạ - Hầm chỉ huy của xí nghiệp than Cửa Ông",
@@ -127,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 right: 107.37187615201181,
                 href:'',
                 type: 'local',
-                icon: redIcon,
+                icon: yellowIcon,
             },
             {
                 name: "Bác Hồ về thăm mỏ than Đèo Nai",
@@ -135,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 right: 107.28902013531457,
                 href:'',
                 type: 'local',
-                icon: redIcon,
+                icon: yellowIcon,
             },
             {
                 name: "Khu lưu niệm Chủ tịch Hồ Chí Minh trên đảo",
@@ -186,20 +188,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 icon: redIcon,
             },
             {
-                name: "Địa điểm lịch sử Trung tâm chiến khu Đông Triều",
+                name: "Địa điểm lịch sử Trung tâm chiến khu Đông Triều - Chùa Bắc Mã",
                 left: 21.12566045409731,
                 right: 106.48270335284258,
                 href:'',
                 type: 'local',
-                icon: redIcon,
+                icon: yellowIcon,
             },
             {
-                name: "Nơi thành lập đệ tứ chiến khu Đông Triều",
+                name: "Nơi thành lập đệ tứ chiến khu Đông Triều - Đình chùa Hổ Lao",
                 left: 21.115589790744604,
                 right: 106.51795990800345,
                 href:'',
                 type: 'local',
-                icon: redIcon,
+                icon: yellowIcon,
             },
             {
                 name: "Đồn Cao Đông Triều",
@@ -207,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 right: 106.51241199406427,
                 href:'',
                 type: 'local',
-                icon: redIcon,
+                icon: yellowIcon,
             },
             {
                 name: "Di tích mỏ than Mạo Khê - Nơi thành lập Chi bộ Đảng Cộng sản đầu tiên ở Quảng Ninh",
@@ -215,7 +217,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 right: 106.59683239248761,
                 href:'',
                 type: 'local',
-                icon: redIcon,
+                icon: yellowIcon,
             },
             {
                 name: "Trận địa pháo cao xạ 12 ly 7",
@@ -223,7 +225,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 right: 106.5419125039142,
                 href:'',
                 type: 'local',
-                icon: redIcon,
+                icon: blueIcon,
             },
             {
                 name: "Khu lưu niệm Bác Hồ trên đảo Tuần Châu",
@@ -247,7 +249,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 right: 107.07153167589206,
                 href:'',
                 type: 'local',
-                icon: redIcon,
+                icon: yellowIcon,
             },
             {
                 name: "Trung tâm Điện chính Bưu điện Quảng Ninh (1964-1975) trên núi Bài Thơ",
@@ -255,7 +257,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 right: 107.0782737891011,
                 href:'',
                 type: 'local',
-                icon: redIcon,
+                icon: yellowIcon,
             },
             {
                 name: "Tượng đài Nguyễn Văn Thuộc",
@@ -263,7 +265,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 right: 107.10806910505939,
                 href:'',
                 type: 'local',
-                icon: redIcon,
+                icon: blueIcon,
             },
             {
                 name: "Tượng đài Vũ Văn Hiếu",
@@ -271,7 +273,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 right: 107.09026600176891,
                 href:'https://tinhdoanquangninh.vn/dia-chi-do-tuong-dai-vu-van-hieu-ha-long/',
                 type: 'local',
-                icon: redIcon,
+                icon: blueIcon,
             },
             {
                 name: "Di tích lưu niệm Bác Hồ",
@@ -279,7 +281,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 right: 107.09961134231463,
                 href:'',
                 type: 'local',
-                icon: redIcon,
+                icon: blueIcon,
             },
             {
                 name: "Đồi Trần Phú",
@@ -311,7 +313,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 right: 107.8864782351543,
                 href:'',
                 type: 'local',
-                icon: redIcon,
+                icon: blueIcon,
             },
             {
                 name: "Sự kiện Bác Hồ qua Trạm Hải quan cửa khẩu Bắc Luân thăm nhân dân Đông Hưng, Trung Quốc năm 1960",
@@ -319,7 +321,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 right: 107.96938694559508,
                 href:'',
                 type: 'local',
-                icon: redIcon,
+                icon: blueIcon,
             },
             {
                 name: "Đồi Thông Yên Lập",
@@ -327,7 +329,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 right: 106.86610592734257,
                 href:'',
                 type: 'local',
-                icon: redIcon,
+                icon: blueIcon,
             },
             {
                 name: "Khe Giao -  Nơi thành lập chi bộ đầu tiên Đảng Cộng sản Việt Nam",
@@ -343,7 +345,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 right: 107.39294688013902,
                 href:'',
                 type: 'local',
-                icon: redIcon,
+                icon: blueIcon,
             },
             {
                 name: "Lưu niệm sự kiện Bác Hồ về thăm Uông Bí năm 1965",
@@ -353,10 +355,31 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 type: 'local',
                 icon: redIcon,
             },
+             {
+                name: "Di tích Lưu niệm Bác Hồ trên đảo Ngọc Vừng", 
+                left: 20.813084784619647,
+                right: 107.37033232352007,
+                href:'',
+                type: 'local',
+                icon: blueIcon,
+            },
+            {
+                name: "Căn cứ kháng chiến Khe Mai",
+                left: 21.113752243424997,
+                right: 107.42302421858291,
+                href:'',
+                type: 'local',
+                icon: redIcon,
+            },
+            {
+                name: "Di tích lưu niệm Bác Hồ về thăm Vạn Yên năm 1962",
+                left: 21.17834995901185,
+                right: 107.55349269181325,
+                href:'',
+                type: 'local',
+                icon: redIcon,
+            },
         ];
-
-
-
 
         districtCoords.forEach(district => {
             let marker = L.marker([district.left, district.right], {
