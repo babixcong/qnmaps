@@ -6,7 +6,7 @@ body {
     padding: 0px !important;
     margin: 0px !important;
 }
-#need-rotate {
+/* #need-rotate {
     width: 100%;
     display: none;
     justify-content: center;
@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     row-gap: 10px;
     height: 100vh;
-}
+} */
 
 .leaflet-marker-icon {
     width: 20px !important;
