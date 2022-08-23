@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         //Khai báo basemap
         const satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { attribution: 'tinhdoanquangninh' });
         const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: 'tinhdoanquangninh' });
+        const os = L.tileLayer('https://{s}.tile/{z}/{x}/{y}.png', { attribution: 'tinhdoanquangninh' });
         const Stadia_Outdoors = L.tileLayer('https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png', { attribution: 'tinhdoanquangninh' });
         const Stamen_Toner = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.{ext}', {
             attribution: 'tinhdoanquangninh',
@@ -21,12 +22,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
             map = L.map('qn_map', {
                 //dragging: true,
                 tap: !L.Browser.mobile,
-                layers: [custom_layer],
+                layers: [os, custom_layer],
                 fullscreenControl: true,
                 fullscreenControlOptions: {
                     position: 'center'
                 }
-            }).setView([21.2158, 107.3309], 5);
+            }).setView([21.2158, 107.3309], 7);
         } else {
             map = L.map('qn_map', {
                 //dragging: true,
