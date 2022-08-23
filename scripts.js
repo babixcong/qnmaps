@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         if (L.Browser.mobile) {
             // write your code here
             map = L.map('qn_map', {
-                dragging: true,
+                //dragging: true,
                 tap: !L.Browser.mobile,
                 layers: [custom_layer],
                 fullscreenControl: true,
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             }).setView([21.2158, 107.3309], 5);
         } else {
             map = L.map('qn_map', {
-                dragging: true,
+                //dragging: true,
                 tap: !L.Browser.mobile,
                 layers: [osm, custom_layer],
                 fullscreenControl: true,
@@ -41,9 +41,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         const baseMaps = {
             "Đường phố": osm,
-            "Vệ tinh": satellite,
-            "Sắc nét": Stadia_Outdoors,
-            "Trắng Đen": Stamen_Toner
+            //"Vệ tinh": satellite,
+           // "Sắc nét": Stadia_Outdoors,
+           // "Trắng Đen": Stamen_Toner
         };
 
         //Thêm option vào overlayMaps
