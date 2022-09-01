@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 fullscreenControlOptions: {
                     position: 'center'
                 }
-            }).setView([21.2158, 107.3309], 8);
+            }).setView([21.2158, 107.3309], 10);
         } else {
             map = L.map('qn_map', {
                 //dragging: true,
