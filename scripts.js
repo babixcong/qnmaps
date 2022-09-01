@@ -222,8 +222,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
             {
                 name: "Lưu niệm sự kiện thành lập Binh đoàn than",
-                left: 20.95379851139367,
-                right: 107.06810818762321,
+                left:  20.957923863430526,
+                right: 107.06756749379532,
                 href: '',
                 type: 'local',
                 icon: redIcon,
