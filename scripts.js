@@ -325,9 +325,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 icon: redIcon,
             },
             {
-                name: "Di tích lưu niệm Bác Hồ",
-                left: 21.34974352192511,
-                right: 107.39294688013902,
+                name: "Di tích lưu niệm Bác Hồ năm 1965",
+                left: 21.33084758801346,
+                right: 107.4158635902562,
                 href: '',
                 type: 'local',
                 icon: blueIcon,
