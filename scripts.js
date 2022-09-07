@@ -22,12 +22,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
             map = L.map('qn_map', {
                 //dragging: true,
                 //tap: !L.Browser.mobile,
-                layers: [osm, custom_layer],
+                layers: [os, custom_layer],
                 fullscreenControl: true,
                 fullscreenControlOptions: {
                     position: 'center'
                 }
-            }).setView([21.2158, 107.3309], 8.9);
+            }).setView([21.2158, 107.3309], 8.95);
         } else {
             map = L.map('qn_map', {
                 //dragging: true,
