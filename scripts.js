@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             map = L.map('qn_map', {
                 //dragging: true,
                 //tap: !L.Browser.mobile,
-                layers: [os, custom_layer],
+                layers: [osm, custom_layer],
                 fullscreenControl: true,
                 fullscreenControlOptions: {
                     position: 'center'
