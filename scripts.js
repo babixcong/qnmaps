@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 fullscreenControlOptions: {
                     position: 'center'
                 }
-            }).setView([21.2158, 107.3309], 9.45);
+            }).setView([21.2158, 107.3309], 9.3);
         } else {
             map = L.map('qn_map', {
                 //dragging: true,
@@ -419,7 +419,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         L.control.layers(baseMaps, overlayMaps).addTo(map);
 
         map.fitBounds(myFeatureGroup.getBounds());
-        map.options.minZoom = 9.5;
+        map.options.minZoom = 9.3;
         map.setMaxBounds(map.getBounds().pad(Math.sqrt(2) / 2));
     };
 });
