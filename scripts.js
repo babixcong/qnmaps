@@ -419,7 +419,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         L.control.layers(baseMaps, overlayMaps).addTo(map);
 
         map.fitBounds(myFeatureGroup.getBounds());
-        map.options.minZoom = 9.3;
+        map.options.minZoom = 9.4;
         map.setMaxBounds(map.getBounds().pad(Math.sqrt(2) / 2));
     };
 });
