@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 fullscreenControlOptions: {
                     position: 'center'
                 }
-            }).setView([21.2158, 107.3309], 9.3);
+            }).setView([21.2158, 107.3309], 9.35);
         } else {
             map = L.map('qn_map', {
                 //dragging: true,
@@ -84,23 +84,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 icon: redIcon,
             },
             {
-                name: "Hang núi đá Chồng",
-                left: 21.036335503372438,
-                right: 106.8726048611921,
-                href: '',
-                type: 'local',
-                icon: redIcon,
-            },
-            {
-                name: "Khu di tích và Danh thắng Vũng Đục",
-                left: 21.009400590593483,
-                right: 107.2951829954266,
-                href: '',
-                type: 'local',
-                icon: redIcon,
-            },
-            {
-                name: "Ngã tư đường lên mỏ Đèo Nai",
+                name: "Ngã tư đường lên mỏ Đèo Nai (Nơi mở đầu cuộc tổng bãi công của ba vạn thợ mỏ ngày 12/11/1936)",
                 left: 21.017082973508277,
                 right: 107.30800561248184,
                 href: 'https://tinhdoanquangninh.vn/nga-tu-duong-len-mo-deo-nai/',
@@ -116,18 +100,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 icon: yellowIcon,
             },
             {
-                name: "Bác Hồ về thăm mỏ than Đèo Nai",
+                name: "Địa điểm lưu niệm Bác Hồ về thăm mỏ than Đèo Nai ngày 30/3/1959",
                 left: 21.01354704082289,
                 right: 107.28902013531457,
-                href: '',
+                href: 'https://tinhdoanquangninh.vn/dia-diem-luu-niem-bac-ho-ve-tham-mo-than-deo-nai-ngay-30-3-1959/',
                 type: 'local',
                 icon: yellowIcon,
             },
             {
-                name: "Khu lưu niệm Chủ tịch Hồ Chí Minh trên đảo",
+                name: "Khu lưu niệm Chủ tịch Hồ Chí Minh trên đảo Cô Tô",
                 left: 20.973308880070505,
                 right: 107.76328330096015,
-                href: '',
+                href: 'https://tinhdoanquangninh.vn/khu-luu-niem-chu-tich-ho-chi-minh-tren-dao-co-to/',
                 type: 'nation',
                 icon: yellowIcon,
             },
@@ -143,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 name: "Núi Hứa",
                 left: 21.334711648009524,
                 right: 107.55254206559084,
-                href: '',
+                href: 'https://tinhdoanquangninh.vn/di-tich-khao-co-lich-su-danh-thang-nui-hua/',
                 type: 'local',
                 icon: redIcon,
             },
@@ -175,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 name: "Địa điểm lịch sử Trung tâm chiến khu Đông Triều - Chùa Bắc Mã",
                 left: 21.12566045409731,
                 right: 106.48270335284258,
-                href: '',
+                href: 'https://tinhdoanquangninh.vn/dia-diem-lich-su-trung-tam-chien-khu-dong-trieu/',
                 type: 'local',
                 icon: yellowIcon,
             },
@@ -188,18 +172,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 icon: yellowIcon,
             },
             {
-                name: "Đồn Cao Đông Triều",
-                left: 21.080519789369127,
-                right: 106.51241199406427,
-                href: '',
-                type: 'local',
-                icon: yellowIcon,
-            },
-            {
                 name: "Di tích mỏ than Mạo Khê - Nơi thành lập Chi bộ Đảng Cộng sản đầu tiên ở Quảng Ninh",
                 left: 21.070949627859008,
                 right: 106.59683239248761,
-                href: '',
+                href: 'https://tinhdoanquangninh.vn/di-tich-lich-su-than-mao-khe/',
                 type: 'local',
                 icon: yellowIcon,
             },
@@ -215,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 name: "Khu lưu niệm Bác Hồ trên đảo Tuần Châu",
                 left: 20.93101857548878,
                 right: 106.98557641293512,
-                href: '',
+                href: 'https://tinhdoanquangninh.vn/khu-luu-niem-bac-ho-tren-dao-tuan-chau/',
                 type: 'local',
                 icon: redIcon,
             },
@@ -227,14 +203,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 href: 'https://tinhdoanquangninh.vn/luu-niem-su-kien-thanh-lap-binh-doan-than/',
                 type: 'local',
                 icon: redIcon,
-            },
-            {
-                name: "Trận địa pháo 37 ly của Xí nghiệp tuyển than Hòn Gai",
-                left: 20.954784324789994,
-                right: 107.07153167589206,
-                href: '',
-                type: 'local',
-                icon: yellowIcon,
             },
             {
                 name: "Trung tâm Điện chính Bưu điện Quảng Ninh (1964-1975) trên núi Bài Thơ",
@@ -296,23 +264,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 name: "Địa điểm thành lập Chi bộ Đảng Cộng sản Việt Nam đầu tiên của thành phố Móng Cái năm 1946",  
                 left: 21.524631815981174,
                 right: 107.96649587922752,
-                href: '',
+                href: 'https://tinhdoanquangninh.vn/dia-diem-thanh-lap-chi-bo-dang-cong-san-viet-nam-dau-tien-cua-thanh-pho-mong-cai/',
                 type: 'local',
                 icon: redIcon,
-            },
-            {
-                name: "Địa điểm lưu niệm sự kiện Bác Hồ về thăm Móng Cái",
-                left: 21.3704553156853,
-                right: 107.8864782351543,
-                href: '',
-                type: 'local',
-                icon: blueIcon,
             },
             {
                 name: "Sự kiện Bác Hồ qua Trạm Hải quan cửa khẩu Bắc Luân thăm nhân dân Đông Hưng, Trung Quốc năm 1960",
                 left: 21.536762635801,
                 right: 107.96938694559508,
-                href: '',
+                href: 'https://tinhdoanquangninh.vn/dia-diem-ghi-dau-su-kien-bac-ho-qua-tram-hai-quan-cua-khau-bac-luan-tham-nhan-dan-dong-hung-trung-quoc-nam-1960/',
                 type: 'local',
                 icon: blueIcon,
             },
@@ -364,15 +324,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 type: 'local',
                 icon: redIcon,
             },
-            {
-                name: "Di tích lưu niệm Bác Hồ về thăm Vạn Yên năm 1962",
-                left: 21.17834995901185,
-                right: 107.55349269181325,
-                href: '',
-                type: 'local',
-                icon: redIcon,
-            },
-        ];
+             ];
 
         districtCoords.forEach(district => {
             let marker = L.marker([district.left, district.right], {
@@ -419,7 +371,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         L.control.layers(baseMaps, overlayMaps).addTo(map);
 
         map.fitBounds(myFeatureGroup.getBounds());
-        map.options.minZoom = 9.4;
+        map.options.minZoom = 9.42;
         map.setMaxBounds(map.getBounds().pad(Math.sqrt(2) / 2));
     };
 });
