@@ -285,10 +285,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 icon: blueIcon,
             },
             {
-                name: "Khe Giao -  Nơi thành lập chi bộ đầu tiên Đảng Cộng sản Việt Nam",
+                name: "Khe Giao - Nơi thành lập chi bộ Đảng Cộng sản Việt Nam đầu tiên huyện Tiên Yên",
                 left: 21.385819247197094,
                 right: 107.32070162834916,
-                href: 'https://tinhdoanquangninh.vn/khe-giao-noi-thanh-lap-chi-bo-dau-tien-dang-cong-san-viet-nam-huyen-tien-yen/',
+                href: 'https://tinhdoanquangninh.vn/khe-giao-noi-thanh-lap-chi-bo-dang-dau-tien-huyen-tien-yen/',
                 type: 'local',
                 icon: redIcon,
             },
