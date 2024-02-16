@@ -75,7 +75,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         });
 
         const districtCoords = [
-          const districtCoords = [
             {
                 name: "Đại học Hạ Long", 
                 left: 21.020977082864725,
@@ -85,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 icon: redIcon,
             },
             {
-                name: "Đại học Công nghiệp Quảng Ninh", , 
+                name: "Đại học Công nghiệp Quảng Ninh",
                 left: 21.060506992134655,
                 right: 106.62376692096228,
                 href: '',
@@ -129,10 +128,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 left: 21.00433427633726,
                 right: 106.85317533311567,
                 href: '',
-  		type: 'local',
+  		          type: 'local',
                 icon: redIcon,
             },
-             ];
+        ];
 
         districtCoords.forEach(district => {
             let marker = L.marker([district.left, district.right], {
