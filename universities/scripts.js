@@ -131,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 href: '',
   		type: 'local',
                 icon: redIcon,
+            },
              ];
 
         districtCoords.forEach(district => {
