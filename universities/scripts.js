@@ -95,7 +95,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
             iconUrl: './caodangnonglam.png',
         });
 
-        const districtCoords = [
+
+         const districtCoords = [
             {
                 name: "Đại học Hạ Long", 
                 left: 21.020977082864725,
@@ -142,17 +143,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 right: 106.71853183205916,
                 href: '',
                 type: 'local',
-                icon: cdcnIcon,
+                icon: cdxdIcon,
             },
             {
                 name: "Cao đẳng Nông lâm Đông Bắc", 
                 left: 21.00433427633726,
                 right: 106.85317533311567,
                 href: '',
-  		          type: 'local',
+                  type: 'local',
                 icon: cdnlIcon,
             },
         ];
+
 
         districtCoords.forEach(district => {
             let marker = L.marker([district.left, district.right], {
