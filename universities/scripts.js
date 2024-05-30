@@ -64,6 +64,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 `);
             }
         }
+
+         const yellowIcon = new L.icon({
+            iconUrl: './yellow.png',
+        });
+        const redIcon = new L.icon({
+            iconUrl: './red.png',
+        });
+        const blueIcon = new L.icon({
+            iconUrl: './blue.png',
+        });
+        
         const dhhlIcon = new L.icon({
             iconUrl: './daihochalong.png',
         });
