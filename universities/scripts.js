@@ -99,8 +99,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
          const districtCoords = [
             {
                 name: "Đại học Hạ Long", 
-                left: 21.020977082864725,
-                right: 106.82003014479535,
+                left: 21.019018823170025, 
+                right: 106.81691701693879,
                 href: 'https://tinhdoanquangninh.vn/truong-dai-hoc-ha-long/',
                 type: 'local',
                 icon: dhhlIcon,
