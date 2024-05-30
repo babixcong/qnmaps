@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             }
         }
 
-         const yellowIcon = new L.icon({
+        const yellowIcon = new L.icon({
             iconUrl: './yellow.png',
         });
         const redIcon = new L.icon({
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 left: 20.950420008629017,
                 right: 107.10421600683237,
                 href: 'https://tinhdoanquangninh.vn/truong-dai-hoc-y-te-quang-ninh/',
-                type: 'nation',
+                type: 'local',
                 icon: cdyteIcon,
             },
             {
