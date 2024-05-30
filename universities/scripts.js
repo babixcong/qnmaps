@@ -64,7 +64,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 `);
             }
         }
-
         const yellowIcon = new L.icon({
             iconUrl: './yellow.png',
         });
