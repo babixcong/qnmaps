@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 name: "Cao đẳng Y tế Quảng Ninh", 
                 left: 20.950420008629017,
                 right: 107.10421600683237,
-                href: 'https://tinhdoanquangninh.vn/truong-dai-hoc-y-te-quang-ninh/',
+                href: 'https://tinhdoanquangninh.vn/truong-cao-dang-y-te-quang-ninh/',
                 type: 'local',
                 icon: cdyteIcon,
             },
