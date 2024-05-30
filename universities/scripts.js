@@ -73,6 +73,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
         const blueIcon = new L.icon({
             iconUrl: './blue.png',
         });
+          const xdIcon = new L.icon({
+            iconUrl: './caodangxd.png',
+        });
 
         const districtCoords = [
             {
@@ -93,8 +96,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
             },
             {
                 name: "Cao đẳng Việt Hàn",  
-                left: 21.00446583821854,
-                right: 107.06214063734242,
+                left: 21.020135218958544, 
+                right: 106.99798063614058,
                 href: '',
                 type: 'local',
                 icon: yellowIcon,
@@ -121,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 right: 106.71853183205916,
                 href: '',
                 type: 'local',
-                icon: redIcon,
+                icon: xdIcon,
             },
             {
                 name: "Cao đẳng Nông lâm Đông Bắc", 
