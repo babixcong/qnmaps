@@ -64,17 +64,26 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 `);
             }
         }
-        const yellowIcon = new L.icon({
-            iconUrl: './yellow.png',
+        const dhhlIcon = new L.icon({
+            iconUrl: './daihochalong.png',
         });
-        const redIcon = new L.icon({
-            iconUrl: './red.png',
+        const dhcnIcon = new L.icon({
+            iconUrl: './daihoccongnghiep.png',
         });
-        const blueIcon = new L.icon({
-            iconUrl: './blue.png',
+        const cdvhIcon = new L.icon({
+            iconUrl: './caodangviethan.png',
         });
-          const xdIcon = new L.icon({
-            iconUrl: './caodangxd.png',
+          const cdxdIcon = new L.icon({
+            iconUrl: './congnghiepxd.png',
+        });
+           const cdyteIcon = new L.icon({
+            iconUrl: './caodangyte.png',
+        });
+            const cdksIcon = new L.icon({
+            iconUrl: './caodangkhoangsan.png',
+        });
+            const cdnlIcon = new L.icon({
+            iconUrl: './caodangnonglam.png',
         });
 
         const districtCoords = [
@@ -82,25 +91,25 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 name: "Đại học Hạ Long", 
                 left: 21.020977082864725,
                 right: 106.82003014479535,
-                href: '',
+                href: 'https://tinhdoanquangninh.vn/truong-dai-hoc-ha-long/',
                 type: 'local',
-                icon: redIcon,
+                icon: dhhlIcon,
             },
             {
                 name: "Đại học Công nghiệp Quảng Ninh",
                 left: 21.060506992134655,
                 right: 106.62376692096228,
-                href: '',
+                href: 'https://tinhdoanquangninh.vn/truong-dai-hoc-cong-nghiep-quang-ninh/',
                 type: 'local',
-                icon: yellowIcon,
+                icon: dhcnIcon,
             },
             {
-                name: "Cao đẳng Việt Hàn",  
+                name: "Cao đẳng Việt - Hàn",  
                 left: 21.020135218958544, 
                 right: 106.99798063614058,
                 href: '',
                 type: 'local',
-                icon: yellowIcon,
+                icon: cdvhIcon,
             },
             {
                 name: "Cao đẳng Than khoáng sản Việt Nam", 
@@ -108,15 +117,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 right: 106.98228451850818,
                 href: '',
                 type: 'local',
-                icon: yellowIcon,
+                icon: cdksIcon,
             },
             {
                 name: "Cao đẳng Y tế Quảng Ninh", 
                 left: 20.950420008629017,
                 right: 107.10421600683237,
-                href: '',
+                href: 'https://tinhdoanquangninh.vn/truong-dai-hoc-y-te-quang-ninh/',
                 type: 'nation',
-                icon: yellowIcon,
+                icon: cdyteIcon,
             },
             {
                 name: "Cao đẳng Công nghiệp và Xây dựng", 
@@ -124,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 right: 106.71853183205916,
                 href: '',
                 type: 'local',
-                icon: xdIcon,
+                icon: cdcnIcon,
             },
             {
                 name: "Cao đẳng Nông lâm Đông Bắc", 
@@ -132,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 right: 106.85317533311567,
                 href: '',
   		          type: 'local',
-                icon: redIcon,
+                icon: cdnlIcon,
             },
         ];
 
