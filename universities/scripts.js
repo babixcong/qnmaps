@@ -73,6 +73,27 @@ document.addEventListener("DOMContentLoaded", function (event) {
         const blueIcon = new L.icon({
             iconUrl: './blue.png',
         });
+        const dhhlIcon = new L.icon({
+            iconUrl: './daihochalong.png',
+        });
+        const dhcnIcon = new L.icon({
+            iconUrl: './daihoccongnghiep.png',
+        });
+        const cdvhIcon = new L.icon({
+            iconUrl: './caodangviethan.png',
+        });
+          const cdxdIcon = new L.icon({
+            iconUrl: './congnghiepxd.png',
+        });
+           const cdyteIcon = new L.icon({
+            iconUrl: './caodangyte.png',
+        });
+            const cdksIcon = new L.icon({
+            iconUrl: './caodangkhoangsan.png',
+        });
+            const cdnlIcon = new L.icon({
+            iconUrl: './caodangnonglam.png',
+        });
 
         const districtCoords = [
             {
