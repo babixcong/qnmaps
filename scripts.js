@@ -293,7 +293,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 icon: redIcon,
             },
             {
-                name: "Di tích lưu niệm Bác Hồ năm 1965",
+                name: "Di tích lưu niệm Bác Hồ năm 1961",
                 left: 21.33084758801346,
                 right: 107.4158635902562,
                 href: 'https://tinhdoanquangninh.vn/di-tich-luu-niem-bac-ho-nam-1961/',
